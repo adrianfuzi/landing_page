@@ -14,6 +14,7 @@
 
         &--logo {
             width: 6rem;
+            height: 7rem; // Must be defined in order for it to work with Safari or on iOS
             margin-right: 3rem;
 
             @media only screen and (max-width: $bp-small-1) {
