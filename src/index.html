@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Landing Page</title>
+    <title>Cube Cloud - Your data kept safe</title>
     <link
       href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   </head>
+  
   <body>
     <div class="header">
-      <div class="header__logo" onClick="window.location.reload()">
+      <div class="header__logo" id="nav-home" onClick="window.location.reload()">
         <img src="./img/logo.svg" alt="logo" class="header__logo--img" />
         <p class="header__logo--text">Cube Cloud</p>
       </div>
@@ -28,7 +30,7 @@
     <div class="header header__sticky">
       <div
         class="header__logo"
-        id="nav-home"
+        id="home"
         onClick="window.location.reload()"
       >
         <img src="./img/logo.svg" alt="logo" class="header__logo--img" />

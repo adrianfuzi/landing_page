@@ -1,6 +1,6 @@
 //Jump to top when the logo is clicked
 
-$('#nav-home').click(function(event) {
+$('#home').click(function(event) {
     event.preventDefault();
     
     $('html, body').animate({scrollTop: 0}, 0);

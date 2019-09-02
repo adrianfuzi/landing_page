@@ -214,7 +214,7 @@ document.querySelector('.hamburger').addEventListener('click', function () {
 });
 },{}],"javascript/smoothScroll.js":[function(require,module,exports) {
 //Jump to top when the logo is clicked
-$('#nav-home').click(function (event) {
+$('#home').click(function (event) {
   event.preventDefault();
   $('html, body').animate({
     scrollTop: 0
@@ -300,7 +300,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55382" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59251" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
