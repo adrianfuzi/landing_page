@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="header__logo" onClick="window.location.reload()">
+        <img src="./img/logo.svg" alt="logo" class="header__logo--img" />
+        <p class="header__logo--text">Cube Cloud</p>
+      </div>
+      <ul class="header__nav">
+        <li class="header__nav--item h">home</li>
+        <li class="header__nav--item f">features</li>
+        <li class="header__nav--item p">pricing</li>
+        <li class="header__nav--item c">company</li>
+        <button class="header__nav--item header__nav--item-btn">login</button>
+      </ul>
+    </div>
+
+    <div class="header header__sticky">
+      <div
+        class="header__logo"
+        id="nav-home"
+        onClick="window.location.reload()"
+      >
+        <img src="./img/logo.svg" alt="logo" class="header__logo--img" />
+        <p class="header__logo--text">Cube Cloud</p>
+      </div>
+      <ul class="header__nav">
+        <li class="header__nav--item h">home</li>
+        <li class="header__nav--item f">features</li>
+        <li class="header__nav--item p">pricing</li>
+        <li class="header__nav--item c">company</li>
+        <button class="header__nav--item header__nav--item-btn">login</button>
+      </ul>
+    </div>
+
+    <div class="hamburger">
+      <div class="hamburger__bar--1"></div>
+      <div class="hamburger__bar--2"></div>
+      <div class="hamburger__bar--3"></div>
+
+      <div class="hamburger__menu">
+        <ul class="hamburger__menu--nav">
+          <li class="hamburger__menu--nav-item burger-h">home</li>
+          <li class="hamburger__menu--nav-item burger-f">features</li>
+          <li class="hamburger__menu--nav-item burger-p">pricing</li>
+          <li class="hamburger__menu--nav-item burger-c">company</li>
+          <button class="hamburger__menu--nav-item hamburger__menu--nav-button">
+            login
+          </button>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="hero__box">
+        <h1 class="hero__box--title">Your encrypted cloud service</h1>
+        <p class="hero__box--text">
+          Protect your confidential files in the cloud with fully encrypted
+          cloud servers. Leverage privacy and speed, store and share your data
+          anonymously.
+        </p>
+        <button class="hero__box--btn">get started</button>
+      </div>
+      <img src="./img/scroll.svg" alt="" class="hero__scroll" />
+    </div>
+    <img src="./img/img-hero.svg" alt="image" class="hero__img" />
+
+    <div class="features">
+      <h1 class="features__title" id="nav-features">features</h1>
+      <p class="features__description">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum in laborum
+        distinctio aut saepe odit deserunt debitis quae vitae ex maxime sunt
+        repellendus, nam odio et hic consequuntur fugit quia?
+      </p>
+      <div class="features__box">
+        <div class="features__box--card">
+          <img
+            src="./img/img-encrypt.svg"
+            alt="image"
+            class="features__box--card-img"
+          />
+          <p class="features__box--card-title">end-to-end encryption</p>
+          <p class="features__box--card-description">
+            Esse, vitae explicabo id pariatur repudiandae accusantium
+            perferendis sint ex doloremque aliquam praesentium repellendus
+            obcaecati earum dolorem. Sapiente labore voluptate officiis
+            reprehenderit.
+          </p>
+        </div>
+        <div class="features__box--card">
+          <img
+            src="./img/img-zero.svg"
+            alt="image"
+            class="features__box--card-img"
+          />
+          <p class="features__box--card-title">zero knowledge</p>
+          <p class="features__box--card-description">
+            Vitae nemo voluptatem blanditiis sint ducimus maiores ad autem odit
+            sapiente. Nihil in animi officiis eaque quae autem earum incidunt
+            vero quisquam.
+          </p>
+        </div>
+        <div class="features__box--card">
+          <img
+            src="./img/img-sync.svg"
+            alt="image"
+            class="features__box--card-img"
+          />
+          <p class="features__box--card-title">sync anything</p>
+          <p class="features__box--card-description">
+            Earum deserunt numquam, iusto, quam, adipisci obcaecati delectus
+            expedita quis vitae assumenda eius sed! Libero amet consequuntur
+            nesciunt excepturi quo iusto sint?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing">
+      <h1 class="pricing__title" id="nav-pricing">pricing</h1>
+      <div class="pricing__box">
+        <div class="pricing__box--card-description">
+          <p class="pricing__box--card-description-title">
+            Purchase monthly plan
+          </p>
+          <p class="pricing__box--card-description-text">plan</p>
+          <p class="pricing__box--card-description-text">monthly price</p>
+          <p class="pricing__box--card-description-text">disk</p>
+        </div>
+
+        <div class="pricing__box--card">
+          <img
+            src="./img/img-price1.svg"
+            alt=""
+            class="pricing__box--card-img"
+          />
+          <p class="pricing__box--card-title">super charged</p>
+          <p class="pricing__box--card-price">$28.99</p>
+          <p class="pricing__box--card-disk">20GB</p>
+          <button class="pricing__box--card-btn">buy</button>
+        </div>
+        <div class="pricing__box--card pricing__box--card-select">
+          <img
+            src="./img/img-price2.svg"
+            alt=""
+            class="pricing__box--card-img"
+          />
+          <p class="pricing__box--card-title">turbo</p>
+          <p class="pricing__box--card-price">$16.99</p>
+          <p class="pricing__box--card-disk">20GB</p>
+          <button class="pricing__box--card-btn">buy</button>
+        </div>
+        <div class="pricing__box--card">
+          <img
+            src="./img/img-price3.svg"
+            alt=""
+            class="pricing__box--card-img"
+          />
+          <p class="pricing__box--card-title">premium</p>
+          <p class="pricing__box--card-price">$8.99</p>
+          <p class="pricing__box--card-disk">20GB</p>
+          <button class="pricing__box--card-btn">buy</button>
+        </div>
+        <div class="pricing__box--card">
+          <img
+            src="./img/img-price4.svg"
+            alt=""
+            class="pricing__box--card-img"
+          />
+          <p class="pricing__box--card-title">free</p>
+          <p class="pricing__box--card-price">$0</p>
+          <p class="pricing__box--card-disk">20GB</p>
+          <button class="pricing__box--card-btn">try</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="company">
+      <img src="./img/img-comp.svg" alt="" class="company__img" />
+      <div class="company__box">
+        <h1 class="company__box--title" id="nav-company">Our Company</h1>
+        <p class="company__box--text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tenetur
+          facere impedit veniam ad quibusdam quaerat. Libero repudiandae facilis
+          harum. Adipisci molestiae esse quas accusamus modi eveniet inventore
+          veniam minus! <br /><br />
+          dolor sit amet, consectetur adipisicing elit. Recusandae, illum.
+          Libero consequatur quaerat amet minima distinctio quisquam ad nemo
+          architecto veritatis hic natus pariatur, dolores, enim, facere
+          ratione. Molestias, eum.
+        </p>
+      </div>
+    </div>
+
+    <div class="feedback">
+      <h1 class="feedback__title">our customers, our success</h1>
+
+      <div class="feedback__wrapper">
+        <div class="feedback__box">
+          <img
+            src="./img/person1.jpg"
+            alt="person_1"
+            class="feedback__box--img"
+          />
+          <p class="feedback__box--img-text">Rob Stuart</p>
+          <p class="feedback__box--text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nemo
+            veritatis perferendis incidunt. Iusto, voluptatibus dolores porro
+            expedita, aliquam adipisci neque numquam consectetur rem dolorem
+            tenetur blanditiis ex amet quod?
+          </p>
+        </div>
+        <div class="feedback__box">
+          <img
+            src="./img/person2.jpg"
+            alt="person_2"
+            class="feedback__box--img"
+          />
+          <p class="feedback__box--img-text">Jane Rivera</p>
+          <p class="feedback__box--text">
+            Amet consectetur adipisicing elit. Vero, aut doloribus libero nisi
+            necessitatibus facere sint dolore inventore, similique voluptates
+            quibusdam officiis recusandae. Cum fugiat labore ipsam, quibusdam
+            vitae illum.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer__box">
+        <img src="./img/logo.svg" alt="Cube Cloud" class="footer__box--logo" />
+        <div class="footer__box--text">
+          <p>1103 Madison St, Pawnee, IL, 62558</p>
+          <p>&copy; Cube Cloud Ltd. All rights reserved</p>
+        </div>
+      </div>
+      <div class="footer__social">
+        <ul class="footer__social--icons">
+          <li class="footer__social--icons-item">
+            <img src="./img/facebook.svg" alt="" />
+          </li>
+          <li class="footer__social--icons-item">
+            <img src="./img/twitter.svg" alt="" />
+          </li>
+          <li class="footer__social--icons-item">
+            <img src="./img/linkedin.svg" alt="" />
+          </li>
+          <li class="footer__social--icons-item">
+            <img src="./img/linuxfoundation.svg" alt="" />
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Required for the smooth scroll animation -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Required for the smooth scroll animation -->
+
+    <script src="./javascript/index.js"></script>
+  </body>
+</html>
