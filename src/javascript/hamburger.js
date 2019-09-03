@@ -4,5 +4,5 @@ function hamburgerChange(change) {
 
 document.querySelector('.hamburger').addEventListener('click', function() {
     hamburgerChange(this);
-    document.querySelector('.hamburger__menu').classList.toggle('hamburger__menu-visible');
+    document.querySelector('.hamburger-menu').classList.toggle('hamburger-menu-visible');
 });

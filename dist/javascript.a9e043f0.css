@@ -160,8 +160,11 @@ h1 {
   top: 1.5rem;
   right: 2rem;
   display: inline-block;
-  cursor: pointer;
   z-index: 100;
+}
+.hamburger:hover {
+  cursor: pointer;
+  filter: hue-rotate(-15deg);
 }
 @media only screen and (min-width: 45.3em) {
   .hamburger {
@@ -189,20 +192,20 @@ h1 {
 .hamburger__change .hamburger__bar--3 {
   transform: rotate(135deg) translate(-7px, 7px);
 }
-.hamburger__menu {
-  position: absolute;
+
+.hamburger-menu {
+  position: fixed;
   background: linear-gradient(to left, #25496b, #1a344c);
   height: 100vh;
   width: 27rem;
-  top: -1.5rem;
-  z-index: -1;
+  z-index: 99;
   right: -33rem;
   transition: right 0.7s;
 }
-.hamburger__menu-visible {
+.hamburger-menu-visible {
   right: -2rem;
 }
-.hamburger__menu--nav {
+.hamburger-menu--nav {
   list-style: none;
   text-transform: uppercase;
   font-size: 2rem;
@@ -210,12 +213,12 @@ h1 {
   letter-spacing: 1px;
   padding-left: 4rem;
 }
-.hamburger__menu--nav-item {
+.hamburger-menu--nav-item {
   width: 10rem;
   margin-top: 8rem;
   transition: all 0.2s;
 }
-.hamburger__menu--nav-item:hover {
+.hamburger-menu--nav-item:hover {
   cursor: pointer;
   filter: brightness(120%);
 }
@@ -617,7 +620,7 @@ h1 {
 .feedback__box--img {
   align-self: center;
   margin-right: 3rem;
-  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
   transform: skew(10deg);
   transition: all 0.2s;

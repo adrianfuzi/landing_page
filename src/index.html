@@ -9,12 +9,16 @@
       href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   </head>
-  
+
   <body>
     <div class="header">
-      <div class="header__logo" id="nav-home" onClick="window.location.reload()">
+      <div
+        class="header__logo"
+        id="nav-home"
+        onClick="window.location.reload()"
+      >
         <img src="./img/logo.svg" alt="logo" class="header__logo--img" />
         <p class="header__logo--text">Cube Cloud</p>
       </div>
@@ -28,11 +32,7 @@
     </div>
 
     <div class="header header__sticky">
-      <div
-        class="header__logo"
-        id="home"
-        onClick="window.location.reload()"
-      >
+      <div class="header__logo" id="home" onClick="window.location.reload()">
         <img src="./img/logo.svg" alt="logo" class="header__logo--img" />
         <p class="header__logo--text">Cube Cloud</p>
       </div>
@@ -49,18 +49,17 @@
       <div class="hamburger__bar--1"></div>
       <div class="hamburger__bar--2"></div>
       <div class="hamburger__bar--3"></div>
-
-      <div class="hamburger__menu">
-        <ul class="hamburger__menu--nav">
-          <li class="hamburger__menu--nav-item burger-h">home</li>
-          <li class="hamburger__menu--nav-item burger-f">features</li>
-          <li class="hamburger__menu--nav-item burger-p">pricing</li>
-          <li class="hamburger__menu--nav-item burger-c">company</li>
-          <button class="hamburger__menu--nav-item hamburger__menu--nav-button">
-            login
-          </button>
-        </ul>
-      </div>
+    </div>
+    <div class="hamburger-menu">
+      <ul class="hamburger-menu--nav">
+        <li class="hamburger-menu--nav-item burger-h">home</li>
+        <li class="hamburger-menu--nav-item burger-f">features</li>
+        <li class="hamburger-menu--nav-item burger-p">pricing</li>
+        <li class="hamburger-menu--nav-item burger-c">company</li>
+        <button class="hamburger-menu--nav-item hamburger__menu--nav-button">
+          login
+        </button>
+      </ul>
     </div>
 
     <div class="hero">
@@ -265,6 +264,7 @@
       </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <!-- Required for the smooth scroll animation -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
