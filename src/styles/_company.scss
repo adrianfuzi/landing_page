@@ -26,6 +26,10 @@
         "compimg compimg compimg compimg";
     }
 
+    @media only screen and (max-width: $bp-medium-5) {
+        padding: 0 3rem 0 3rem;
+    }
+
     &__box {
         grid-area: comptext;
         margin: 6rem 3rem 0 0;

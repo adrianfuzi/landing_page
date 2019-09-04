@@ -18,6 +18,11 @@ html {
     font-size: 50%;
   }
 }
+@media only screen and (max-width: 36.6em) {
+  html {
+    font-size: 40%;
+  }
+}
 
 body {
   font-family: "Nunito Sans", sans-serif;
@@ -328,6 +333,11 @@ h1 {
     padding: 2rem 5rem 5rem 5rem;
   }
 }
+@media only screen and (max-width: 36.6em) {
+  .features {
+    padding: 3rem 2rem 5rem 3rem;
+  }
+}
 .features__title {
   text-transform: capitalize;
   text-align: center;
@@ -419,6 +429,11 @@ h1 {
   .company {
     height: auto;
     grid-template-areas: "comptext comptext comptext comptext" "compimg compimg compimg compimg";
+  }
+}
+@media only screen and (max-width: 36.6em) {
+  .company {
+    padding: 0 3rem 0 3rem;
   }
 }
 .company__box {

@@ -17,6 +17,10 @@
         padding: 2rem 5rem 5rem 5rem;
     }
 
+    @media only screen and (max-width: $bp-medium-5) {
+        padding: 3rem 2rem 5rem 3rem;
+    }
+
     &__title {
         text-transform: capitalize;
         text-align: center;
