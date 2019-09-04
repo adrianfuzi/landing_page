@@ -304,7 +304,7 @@ if ($(window).width() >= 1207) {
   }),
       t3Scroll = {
     "start": 600,
-    "stop": 800
+    "stop": 700
   };
   var t4 = TweenMax.from(".pricing__title", 1, {
     opacity: 0,
@@ -324,7 +324,7 @@ if ($(window).width() >= 1207) {
   }),
       t5Scroll = {
     "start": 1200,
-    "stop": 1500
+    "stop": 1400
   };
   var t6 = TweenMax.from(".company__img", 1, {
     opacity: 0,
@@ -333,7 +333,7 @@ if ($(window).width() >= 1207) {
     ease: Power2.easeOut
   }),
       t6Scroll = {
-    "start": 1500,
+    "start": 1400,
     "stop": 2300
   };
   var t7 = TweenMax.from(".company__box", 1, {
@@ -342,7 +342,7 @@ if ($(window).width() >= 1207) {
     ease: Power2.easeOut
   }),
       t7Scroll = {
-    "start": 1500,
+    "start": 1400,
     "stop": 2300
   };
   var t8 = TweenMax.from(".feedback__title", 1, {
@@ -536,7 +536,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55757" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55961" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

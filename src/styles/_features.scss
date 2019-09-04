@@ -29,7 +29,7 @@
 
     &__description {
         margin-bottom: 3rem;
-        font-size: 2.1rem;
+        font-size: 1.9rem;
     }
 
     &__box {
@@ -41,7 +41,6 @@
         }
 
         @media only screen and (max-width: $bp-medium-2) {
-            // flex-direction: column;
             align-items: center;
             flex-wrap: wrap;
         }

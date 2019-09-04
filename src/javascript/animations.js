@@ -9,15 +9,15 @@ if ( $(window).width() >= 1207) {
 
     const t2 = TweenMax.from(".features__description", 1, {opacity:0, x:-200, paused:true, ease:Power2.easeOut}), t2Scroll = {"start":400, "stop":600};
 
-    const t3 = TweenMax.from(".features__box", 1, {opacity:0, paused:true, ease:Power2.easeOut}), t3Scroll = {"start": 600, "stop": 800};
+    const t3 = TweenMax.from(".features__box", 1, {opacity:0, paused:true, ease:Power2.easeOut}), t3Scroll = {"start": 600, "stop": 700};
 
     const t4 = TweenMax.from(".pricing__title", 1, {opacity:0, x: -200, paused:true, ease:Power2.easeOut}), t4Scroll = {"start": 800, "stop": 1200};
 
-    const t5 = TweenMax.from(".pricing__box", 1, {opacity:0, y: 200, paused:true, ease:Power2.easeOut}), t5Scroll = {"start": 1200, "stop": 1500};
+    const t5 = TweenMax.from(".pricing__box", 1, {opacity:0, y: 200, paused:true, ease:Power2.easeOut}), t5Scroll = {"start": 1200, "stop": 1400};
 
-    const t6 = TweenMax.from(".company__img", 1, {opacity:0, x: -200, paused:true, ease:Power2.easeOut}), t6Scroll = {"start": 1500, "stop": 2300};
+    const t6 = TweenMax.from(".company__img", 1, {opacity:0, x: -200, paused:true, ease:Power2.easeOut}), t6Scroll = {"start": 1400, "stop": 2300};
 
-    const t7 = TweenMax.from(".company__box", 1, {opacity:0, paused:true, ease:Power2.easeOut}), t7Scroll = {"start": 1500, "stop": 2300};
+    const t7 = TweenMax.from(".company__box", 1, {opacity:0, paused:true, ease:Power2.easeOut}), t7Scroll = {"start": 1400, "stop": 2300};
 
     const t8 = TweenMax.from(".feedback__title", 1, {opacity:0, x: -200, paused:true, ease:Power2.easeOut}), t8Scroll = {"start": 2300, "stop": 2500};
 
