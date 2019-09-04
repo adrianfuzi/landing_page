@@ -85,6 +85,17 @@
             @media only screen and (max-width: $bp-medium-5) {
                 transform: skew(0);
             }
+
+            &-author {
+                position: relative;
+                top: 1rem;
+                display: none;
+                font-size: 1.4rem;
+
+                @media only screen and (max-width: $bp-medium-5) {
+                    display: block;
+                }
+            }
         }
     }
 

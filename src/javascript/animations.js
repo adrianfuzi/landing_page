@@ -5,17 +5,17 @@ if ( $(window).width() >= 1207) {
     TweenMax.from('.hero__scroll', 1, {opacity: 0, ease:Power1.easeOut}).delay(1);
 
 
-    const t1 = TweenMax.from(".features__title", 1, {opacity:0, scale: .8, paused:true, ease:Power2.easeOut}), t1Scroll = {"start": 100, "stop": 400};
+    const t1 = TweenMax.from(".features__title", 1, {opacity:0, paused:true, ease:Power2.easeOut}), t1Scroll = {"start": 100, "stop": 400};
 
     const t2 = TweenMax.from(".features__description", 1, {opacity:0, x:-200, paused:true, ease:Power2.easeOut}), t2Scroll = {"start":400, "stop":600};
 
     const t3 = TweenMax.from(".features__box", 1, {opacity:0, paused:true, ease:Power2.easeOut}), t3Scroll = {"start": 600, "stop": 800};
 
-    const t4 = TweenMax.from(".pricing__title", 1, {opacity:0, scale: .8, paused:true, ease:Power2.easeOut}), t4Scroll = {"start": 800, "stop": 1200};
+    const t4 = TweenMax.from(".pricing__title", 1, {opacity:0, x: -200, paused:true, ease:Power2.easeOut}), t4Scroll = {"start": 800, "stop": 1200};
 
     const t5 = TweenMax.from(".pricing__box", 1, {opacity:0, y: 200, paused:true, ease:Power2.easeOut}), t5Scroll = {"start": 1200, "stop": 1500};
 
-    const t6 = TweenMax.from(".company__img", 1, {opacity:0, y: 200, paused:true, ease:Power2.easeOut}), t6Scroll = {"start": 1500, "stop": 2300};
+    const t6 = TweenMax.from(".company__img", 1, {opacity:0, x: -200, paused:true, ease:Power2.easeOut}), t6Scroll = {"start": 1500, "stop": 2300};
 
     const t7 = TweenMax.from(".company__box", 1, {opacity:0, paused:true, ease:Power2.easeOut}), t7Scroll = {"start": 1500, "stop": 2300};
 

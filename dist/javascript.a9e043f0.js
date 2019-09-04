@@ -280,7 +280,6 @@ if ($(window).width() >= 1207) {
   }).delay(1);
   var t1 = TweenMax.from(".features__title", 1, {
     opacity: 0,
-    scale: .8,
     paused: true,
     ease: Power2.easeOut
   }),
@@ -309,7 +308,7 @@ if ($(window).width() >= 1207) {
   };
   var t4 = TweenMax.from(".pricing__title", 1, {
     opacity: 0,
-    scale: .8,
+    x: -200,
     paused: true,
     ease: Power2.easeOut
   }),
@@ -329,7 +328,7 @@ if ($(window).width() >= 1207) {
   };
   var t6 = TweenMax.from(".company__img", 1, {
     opacity: 0,
-    y: 200,
+    x: -200,
     paused: true,
     ease: Power2.easeOut
   }),
@@ -537,7 +536,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62876" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54369" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
