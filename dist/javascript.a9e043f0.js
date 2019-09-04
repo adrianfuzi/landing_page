@@ -224,22 +224,22 @@ $('#home').click(function (event) {
 $(".h").click(function () {
   $('html, body').animate({
     scrollTop: $("#nav-home").offset().top - 100
-  }, 400);
+  }, 800);
 });
 $(".f").click(function () {
   $('html, body').animate({
     scrollTop: $("#nav-features").offset().top - 95
-  }, 400);
+  }, 800);
 });
 $('.p').click(function () {
   $('html, body').animate({
     scrollTop: $("#nav-pricing").offset().top - 95
-  }, 400);
+  }, 800);
 });
 $('.c').click(function () {
   $('html, body').animate({
     scrollTop: $("#nav-company").offset().top - 135
-  }, 400);
+  }, 800);
 }); // Hamburger navigation scroll behavior
 
 $(".burger-h").click(function () {
@@ -280,30 +280,31 @@ if ($(window).width() >= 1207) {
   }).delay(1);
   var t1 = TweenMax.from(".features__title", 1, {
     opacity: 0,
+    x: -200,
     paused: true,
     ease: Power2.easeOut
   }),
       t1Scroll = {
     "start": 100,
-    "stop": 400
+    "stop": 300
   };
   var t2 = TweenMax.from(".features__description", 1, {
     opacity: 0,
-    x: -200,
     paused: true,
     ease: Power2.easeOut
   }),
       t2Scroll = {
-    "start": 400,
+    "start": 300,
     "stop": 600
   };
   var t3 = TweenMax.from(".features__box", 1, {
     opacity: 0,
+    y: 200,
     paused: true,
     ease: Power2.easeOut
   }),
       t3Scroll = {
-    "start": 600,
+    "start": 400,
     "stop": 700
   };
   var t4 = TweenMax.from(".pricing__title", 1, {
@@ -536,7 +537,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55961" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56067" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

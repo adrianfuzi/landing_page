@@ -11,25 +11,25 @@ $('#home').click(function(event) {
 $(".h").click(function() {
     $('html, body').animate({
         scrollTop: $("#nav-home").offset().top-100
-    }, 400);
+    }, 800);
 });
 
 $(".f").click(function() {
     $('html, body').animate({
         scrollTop: $("#nav-features").offset().top-95
-    }, 400);
+    }, 800);
 });
 
 $('.p').click(function() {
     $('html, body').animate({
         scrollTop: $("#nav-pricing").offset().top-95
-    }, 400);
+    }, 800);
 });
 
 $('.c').click(function() {
     $('html, body').animate({
         scrollTop: $("#nav-company").offset().top-135
-    }, 400);
+    }, 800);
 });
 
 // Hamburger navigation scroll behavior

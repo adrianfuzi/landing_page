@@ -5,11 +5,11 @@ if ( $(window).width() >= 1207) {
     TweenMax.from('.hero__scroll', 1, {opacity: 0, ease:Power1.easeOut}).delay(1);
 
 
-    const t1 = TweenMax.from(".features__title", 1, {opacity:0, paused:true, ease:Power2.easeOut}), t1Scroll = {"start": 100, "stop": 400};
+    const t1 = TweenMax.from(".features__title", 1, {opacity:0, x:-200, paused:true, ease:Power2.easeOut}), t1Scroll = {"start": 100, "stop": 300};
 
-    const t2 = TweenMax.from(".features__description", 1, {opacity:0, x:-200, paused:true, ease:Power2.easeOut}), t2Scroll = {"start":400, "stop":600};
+    const t2 = TweenMax.from(".features__description", 1, {opacity:0, paused:true, ease:Power2.easeOut}), t2Scroll = {"start":300, "stop":600};
 
-    const t3 = TweenMax.from(".features__box", 1, {opacity:0, paused:true, ease:Power2.easeOut}), t3Scroll = {"start": 600, "stop": 700};
+    const t3 = TweenMax.from(".features__box", 1, {opacity:0, y: 200, paused:true, ease:Power2.easeOut}), t3Scroll = {"start": 400, "stop": 700};
 
     const t4 = TweenMax.from(".pricing__title", 1, {opacity:0, x: -200, paused:true, ease:Power2.easeOut}), t4Scroll = {"start": 800, "stop": 1200};
 
