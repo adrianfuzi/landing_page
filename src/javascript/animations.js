@@ -23,8 +23,6 @@ if ( $(window).width() >= 1207) {
 
     const t9 = TweenMax.from(".feedback__box", 1, {opacity:0, y: 100, paused:true, ease:Power2.easeOut}), t9Scroll = {"start": 2500, "stop": 2700};
 
-    // const t10 = TweenMax.from("#feedback-person-2", 1, {opacity:0, y: 200, paused:true, ease:Power2.easeOut}), t10Scroll = {"start": 2600, "stop": 2800};
-
     $(window).on("scroll",function(){
 
         const windowTop = $(window).scrollTop();
@@ -118,16 +116,6 @@ if ( $(window).width() >= 1207) {
         } else if ( t9Current < t9Scroll.stop ) {
             t9.progress(1);
         }
-
-        // const t10Current = windowTop, t10Progress = ( t10Current - t10Scroll.start ) / ( t10Scroll.stop - t10Scroll.start );
-
-        // if(t10Current > t10Scroll.start && t10Current < t10Scroll.stop) {
-        //     t10.progress(t10Progress);
-        // } else if ( t10Current < t10Scroll.start ) {
-        //     t10.progress(0);
-        // } else if ( t10Current < t10Scroll.stop ) {
-        //     t10.progress(1);
-        // }
 
     });
 

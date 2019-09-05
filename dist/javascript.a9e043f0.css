@@ -835,6 +835,106 @@ h1 {
   filter: brightness(100%);
 }
 
+.login-wrapper {
+  position: fixed;
+  top: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 90;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.login-wrapper-hidden {
+  opacity: 0;
+}
+.login-wrapper-disabled {
+  display: none;
+}
+
+.login {
+  width: 55rem;
+  height: 65rem;
+  background: linear-gradient(to left, #25496b, #1a344c);
+  border: 1px solid #37d7ff;
+  border-radius: 5px;
+}
+.login__close {
+  cursor: pointer;
+  margin: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.login__close--img {
+  width: 4rem;
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+.login__close--img:hover {
+  filter: hue-rotate(-15deg);
+}
+.login__title {
+  margin: 5rem 0 0 5rem;
+  font-size: 2.5rem;
+}
+.login__form {
+  padding: 5rem;
+}
+.login__form input[type=text], .login__form input[type=password] {
+  display: block;
+  width: 100%;
+  color: #37d7ff;
+  font-size: 1.7rem;
+  padding: 1rem;
+  border: 1px solid #37d7ff;
+  border-radius: 3px;
+  margin: 1.5rem 0;
+  background-color: #1A2E4C;
+}
+.login__form input[type=text]::placeholder, .login__form input[type=password]::placeholder {
+  color: #37d7ff79;
+}
+.login__form--button {
+  width: 20rem;
+  color: #37d7ff;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: 1px solid #37d7ff;
+  border-radius: 3px;
+  background-color: transparent;
+  margin-top: 2rem;
+  transition: all 0.3s;
+}
+.login__form--button:hover {
+  cursor: pointer;
+  background-color: #37d7ff;
+  color: #1A2E4C;
+}
+.login__form--forgot {
+  position: relative;
+  left: 10rem;
+  color: #37d7ff;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+@media only screen and (max-width: 30.3em) {
+  .login__form--forgot {
+    left: 3rem;
+  }
+}
+.login__signup {
+  margin-top: 10rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.login__signup-link {
+  color: #37d7ff;
+  font-weight: 600;
+  filter: hue-rotate(-10deg);
+}
+
 @keyframes float {
   0% {
     transform: translateY(0%);
