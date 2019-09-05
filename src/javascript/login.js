@@ -6,17 +6,20 @@ const hamburger = document.querySelector('.hamburger');
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 
 function openLogin() {
+    setTimeout(() => {
+        login.style.opacity = '1';
+    }, 10);
     login.style.display = 'flex';
-    login.classList.remove('login-wrapper-hidden');
-    login.classList.remove('login-wrapper-disabled');
     hamburger.classList.remove('hamburger__change');
     hamburgerMenu.classList.remove('hamburger-menu-visible');
-    TweenMax.from('.login-wrapper', .3, {y: -400, ease:Power1.easeOut});
+    TweenMax.from('.login-wrapper', .3, {y: -600, ease:Power1.easeOut});
 }
 
 function closeLogin() {
-    login.classList.add('login-wrapper-hidden');
-    login.classList.add('login-wrapper-disabled');
+    login.style.opacity = '0';
+    setTimeout(() => {
+        login.style.display = 'none';
+    }, 1000);
 }
 
 loginBtn.forEach(el => {

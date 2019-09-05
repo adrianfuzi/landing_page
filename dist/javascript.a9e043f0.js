@@ -497,20 +497,23 @@ var hamburger = document.querySelector('.hamburger');
 var hamburgerMenu = document.querySelector('.hamburger-menu');
 
 function openLogin() {
+  setTimeout(function () {
+    login.style.opacity = '1';
+  }, 10);
   login.style.display = 'flex';
-  login.classList.remove('login-wrapper-hidden');
-  login.classList.remove('login-wrapper-disabled');
   hamburger.classList.remove('hamburger__change');
   hamburgerMenu.classList.remove('hamburger-menu-visible');
   TweenMax.from('.login-wrapper', .3, {
-    y: -400,
+    y: -600,
     ease: Power1.easeOut
   });
 }
 
 function closeLogin() {
-  login.classList.add('login-wrapper-hidden');
-  login.classList.add('login-wrapper-disabled');
+  login.style.opacity = '0';
+  setTimeout(function () {
+    login.style.display = 'none';
+  }, 1000);
 }
 
 loginBtn.forEach(function (el) {
@@ -562,7 +565,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62368" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53885" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

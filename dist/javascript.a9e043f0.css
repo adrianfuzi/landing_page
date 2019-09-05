@@ -839,17 +839,15 @@ h1 {
   position: fixed;
   top: 10rem;
   width: 100%;
-  display: flex;
   justify-content: center;
   z-index: 90;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.5s;
 }
-.login-wrapper-hidden {
-  opacity: 0;
-}
-.login-wrapper-disabled {
-  display: none;
+@media only screen and (max-width: 30.3em) {
+  .login-wrapper {
+    top: 7rem;
+  }
 }
 
 .login {
@@ -899,6 +897,7 @@ h1 {
   color: #37d7ff;
   padding: 1rem;
   font-size: 1.5rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   border: 1px solid #37d7ff;
   border-radius: 3px;
