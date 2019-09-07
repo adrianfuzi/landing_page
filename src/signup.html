@@ -33,9 +33,29 @@
                 <label class="signup__form--checkbox-label" for="styled-checkbox-1">I agree to Cube Cloud <a class="signup__form--checkbox-link" href="#">Terms of Service & Privacy Policy</a></label>
                 <button class="signup__form--button" type="submit">Start Free</button>
             </div>
-            <p class="signup__login">Already have an account? <a href="#" class=signup__login-link>Login here</a></p>
+            <p class="signup__login">Already have an account? <a class=signup__login-link>Login here</a></p>
         </form>
     </div>
+
+    <div class="login-wrapper">
+
+        <form action="" class="login">
+          <div class="login__logo">
+              <img src="./img/logo.svg" alt="" class="login__logo--img">
+          </div>
+          <p class="login__title">Login to your account</p>
+          <div class="login__form">
+            <input type="text" placeholder="Username" name="username" required>
+    
+            <input type="password" placeholder="Password" name="password" required>
+    
+            <button class="login__form--button" type="submit">Login</button>
+            <a href="#" class="login__form--forgot">Forgot password?</a>
+          </div>
+          <p class="login__signup">Don't have an account? <a class="login__signup-link">Register</a></p>
+        </form>
+    
+      </div>
 
     <!-- Required for the animations -->
     <script
@@ -46,6 +66,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <!-- Required for the animations -->
 
-    <script src="./javascript/signup.js"></script>
+    <script src="./javascript/signup/signup.js"></script>
   </body>
 </html>

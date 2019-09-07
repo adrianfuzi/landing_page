@@ -1,6 +1,6 @@
 .login-wrapper {
     position: fixed;
-    top: 8.5rem;
+    top: 7rem;
     width: 100%;
     display: none;
     justify-content: center;
@@ -30,22 +30,13 @@
         height: 100vh;
     }
 
-    &__close {
-        cursor: pointer;
-        margin: 2rem;
-        display: flex;
-        justify-content: flex-end;
+    &__logo {
+        position: relative;
+        top: 3rem;
+        left: 4rem;
 
         &--img {
-            width: 4rem;
-            transition: all .3s;
-            border-radius: 50%;
-
-            transition: all .3s;
-
-            &:hover {
-                filter: hue-rotate(-15deg);
-            }
+            height: 4rem;
         }
     }
 
@@ -129,6 +120,8 @@
         font-size: 1.8rem;
 
         &-link {
+            cursor: pointer;
+            text-decoration: underline;
             color: $color-primary;
             font-weight: 600;
             filter: hue-rotate(-10deg);

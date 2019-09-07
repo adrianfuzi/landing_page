@@ -721,7 +721,8 @@ h1 {
 }
 @media only screen and (max-width: 30.3em) {
   .footer__social {
-    margin-right: 2rem;
+    width: 17rem;
+    margin: 0 2rem 0 2rem;
   }
 }
 .footer__social--icons {
@@ -746,7 +747,7 @@ h1 {
 
 .login-wrapper {
   position: fixed;
-  top: 10rem;
+  top: 8.5rem;
   width: 100%;
   display: none;
   justify-content: center;
@@ -756,7 +757,8 @@ h1 {
 }
 @media only screen and (max-width: 30.3em) {
   .login-wrapper {
-    top: 7rem;
+    top: 0rem;
+    z-index: 100;
   }
 }
 
@@ -767,6 +769,13 @@ h1 {
   border: 1px solid #37d7ff;
   border-radius: 5px;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.3);
+}
+@media only screen and (max-width: 30.3em) {
+  .login {
+    border: none;
+    border-radius: 0;
+    height: 100vh;
+  }
 }
 .login__close {
   cursor: pointer;

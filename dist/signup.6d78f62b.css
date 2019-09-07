@@ -59,6 +59,8 @@ h1 {
   top: 7rem;
   display: flex;
   justify-content: center;
+  opacity: 1;
+  transition: all 0.3s;
 }
 @media only screen and (max-width: 30.3em) {
   .signup-wrapper {
@@ -212,6 +214,8 @@ h1 {
   font-size: 1.8rem;
 }
 .signup__login-link {
+  cursor: pointer;
+  text-decoration: underline;
   color: #37d7ff;
   font-weight: 600;
   filter: hue-rotate(-10deg);
@@ -223,7 +227,7 @@ h1 {
 
 .login-wrapper {
   position: fixed;
-  top: 8.5rem;
+  top: 7rem;
   width: 100%;
   display: none;
   justify-content: center;
@@ -253,20 +257,13 @@ h1 {
     height: 100vh;
   }
 }
-.login__close {
-  cursor: pointer;
-  margin: 2rem;
-  display: flex;
-  justify-content: flex-end;
+.login__logo {
+  position: relative;
+  top: 3rem;
+  left: 4rem;
 }
-.login__close--img {
-  width: 4rem;
-  transition: all 0.3s;
-  border-radius: 50%;
-  transition: all 0.3s;
-}
-.login__close--img:hover {
-  filter: hue-rotate(-15deg);
+.login__logo--img {
+  height: 4rem;
 }
 .login__title {
   margin: 5rem 0 0 5rem;
@@ -336,6 +333,8 @@ h1 {
   font-size: 1.8rem;
 }
 .login__signup-link {
+  cursor: pointer;
+  text-decoration: underline;
   color: #37d7ff;
   font-weight: 600;
   filter: hue-rotate(-10deg);
@@ -345,4 +344,4 @@ h1 {
   filter: brightness(110%);
 }
 
-/*# sourceMappingURL=/signup.031861e7.css.map */
+/*# sourceMappingURL=/signup.6d78f62b.css.map */
