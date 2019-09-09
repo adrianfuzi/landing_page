@@ -1,0 +1,93 @@
+$color-primary: #37d7ff;
+$color-secondary: #1A2E4C;
+$color-secondary-dark: #0c1522;
+
+$color-text-primary-light: #90e9ff;
+$color-text-primary: #37d7ff;
+$color-text-secondary: #1A2E4C;
+$font-family: 'Nunito Sans', sans-serif;
+
+
+$background: linear-gradient(135deg, rgba(76, 76, 76, 0.04) 0%, rgba(76, 76, 76, 0.04) 10%,rgba(149, 149, 149, 0.04) 10%, rgba(149, 149, 149, 0.04) 100%),linear-gradient(90deg, rgba(196, 196, 196, 0.04) 0%, rgba(196, 196, 196, 0.04) 59%,rgba(68, 68, 68, 0.04) 59%, rgba(68, 68, 68, 0.04) 100%),linear-gradient(45deg, rgba(39, 39, 39, 0.01) 0%, rgba(39, 39, 39, 0.01) 9%,rgba(218, 218, 218, 0.01) 9%, rgba(218, 218, 218, 0.01) 100%),linear-gradient(0deg, rgba(26, 26, 26, 0.04) 0%, rgba(26, 26, 26, 0.04) 33%,rgba(90, 90, 90, 0.04) 33%, rgba(90, 90, 90, 0.04) 100%),linear-gradient(135deg, rgba(37, 37, 37, 0.07) 0%, rgba(37, 37, 37, 0.07) 46%,rgba(50, 50, 50, 0.07) 46%, rgba(50, 50, 50, 0.07) 100%),linear-gradient(90deg, rgb(8, 28, 65),rgb(16, 173, 226));
+
+$bp-huge-3: 113.4em; // 1815px
+$bp-huge-2: 103.1em; // 1651px
+$bp-huge-1: 94.9em; // 1519px
+$bp-large-1: 83.5em; // 1336px
+$bp-large-2: 75.4em; // 1207px
+$bp-large-3: 67.9em; // 1063px
+$bp-large-4: 63.4em; // 1015px
+$bp-medium-1: 56.4em; // 903px
+$bp-medium-2: 50.6em; // 806px
+$bp-medium-3: 46.3em; // 742px
+$bp-medium-4: 45.3em; // 726px
+$bp-medium-5: 36.6em; // 570px
+$bp-small-1: 30.3em; // 486px
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16 = 62.5%
+
+    @media only screen and (max-width: $bp-large-1) {
+        font-size: 56.2%;
+    }
+
+    @media only screen and (max-width: $bp-large-4) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: $font-family;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $color-text-primary;
+    background-image: $background;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header header"
+    ". title title ."
+    "img img contact ."
+    "footer footer footer footer";
+
+    @media only screen and (min-width: $bp-huge-2) {
+        padding: 0 5rem 0 5rem;
+    }
+
+    @media only screen and (min-width: $bp-huge-3) {
+        padding: 0 10rem 0 10rem;
+    }
+
+    @media only screen and (max-width: $bp-large-3) {
+    grid-template-areas:
+    "header header header header"
+    ". title title ."
+    ". img img ."
+    ". contact contact ."
+    "footer footer footer footer";
+    }
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 7rem;
+
+    @media only screen and (max-width: $bp-small-1) {
+        font-size: 4.8rem;
+    }
+}
+
+::selection {
+    background: $color-primary;
+}

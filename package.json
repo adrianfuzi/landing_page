@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html src/signup.html",
-    "build": "parcel build src/index.html src/signup.html"
+    "dev": "parcel src/index.html src/signup.html src/contact.html",
+    "build": "parcel build src/index.html src/signup.html src/contact.html"
   },
   "keywords": [],
   "author": "Adrian Füzi",

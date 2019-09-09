@@ -1,4 +1,4 @@
-const loginBtn = document.querySelectorAll('.header__nav--item-btn');
+const loginBtn = document.querySelector('.header__nav--item-btn');
 const loginBurger = document.querySelector('.hamburger__menu--nav-button');
 const loginClose = document.querySelector('.login__close--img');
 const login = document.querySelector('.login-wrapper');
@@ -28,12 +28,9 @@ function closeLogin() {
     isOpen = false;
 }
 
-loginBtn.forEach(el => {
-    el.addEventListener('click', () => {
-        openLogin();
-    })
-});
+loginBtn.addEventListener('click', openLogin);
 
 loginBurger.addEventListener('click', openLogin);
 
 loginClose.addEventListener('click', closeLogin);
+

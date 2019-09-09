@@ -73,7 +73,7 @@ h1 {
   justify-content: space-around;
   padding: 3rem 0 10rem 0;
 }
-@media only screen and (max-width: 45.3em) {
+@media only screen and (max-width: 50.6em) {
   .header {
     justify-content: flex-start;
     margin-left: 2rem;
@@ -112,15 +112,19 @@ h1 {
   letter-spacing: 1px;
 }
 .header__nav--item {
-  margin-left: 10rem;
+  margin-left: 6rem;
   transition: all 0.2s;
+}
+.header__nav--item a {
+  text-decoration: none;
+  color: #37d7ff;
 }
 @media only screen and (max-width: 56.4em) {
   .header__nav--item {
     margin-left: 5rem;
   }
 }
-@media only screen and (max-width: 45.3em) {
+@media only screen and (max-width: 50.6em) {
   .header__nav--item {
     display: none;
   }
@@ -149,7 +153,7 @@ h1 {
     width: calc(100% - 20rem);
   }
 }
-@media only screen and (max-width: 45.3em) {
+@media only screen and (max-width: 50.6em) {
   .header__sticky {
     display: none;
   }
@@ -159,19 +163,14 @@ h1 {
   position: fixed;
   top: 1.5rem;
   right: 2rem;
-  display: inline-block;
+  display: none;
   z-index: 100;
 }
 .hamburger:hover {
   cursor: pointer;
   filter: hue-rotate(-15deg);
 }
-@media only screen and (min-width: 45.3em) {
-  .hamburger {
-    display: none;
-  }
-}
-@media only screen and (max-width: 45.3em) {
+@media only screen and (max-width: 50.6em) {
   .hamburger {
     display: inline-block;
   }
@@ -217,6 +216,10 @@ h1 {
   width: 10rem;
   margin-top: 8rem;
   transition: all 0.2s;
+}
+.hamburger-menu--nav-item a {
+  text-decoration: none;
+  color: #37d7ff;
 }
 .hamburger-menu--nav-item:hover {
   cursor: pointer;

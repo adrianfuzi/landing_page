@@ -1,6 +1,5 @@
 const loginLink = document.querySelector('.signup__login-link');
 const loginForm = document.querySelector('.login-wrapper');
-// const loginFormClose = document.querySelector('.login__close--img');
 const signupForm = document.querySelector('.signup-wrapper');
 const registerLink = document.querySelector('.login__signup-link');
 

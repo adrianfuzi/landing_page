@@ -191,8 +191,7 @@ module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"javascript/signup/login.js":[function(require,module,exports) {
 var loginLink = document.querySelector('.signup__login-link');
-var loginForm = document.querySelector('.login-wrapper'); // const loginFormClose = document.querySelector('.login__close--img');
-
+var loginForm = document.querySelector('.login-wrapper');
 var signupForm = document.querySelector('.signup-wrapper');
 var registerLink = document.querySelector('.login__signup-link');
 
@@ -254,7 +253,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58086" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54449" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

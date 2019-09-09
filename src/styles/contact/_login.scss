@@ -1,0 +1,143 @@
+.login-wrapper {
+    position: fixed;
+    top: 8.5rem;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    z-index: 90;
+    opacity: 0;
+
+    transition: opacity .5s;
+
+    @media only screen and (max-width: $bp-small-1) {
+        top: 0rem;
+        z-index: 100;
+    }
+}
+
+.login {
+    width: 55rem;
+    height: 65rem;
+    background: linear-gradient(to left, #25496b, #1a344c);
+
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, .3);
+
+    @media only screen and (max-width: $bp-small-1) {
+        border: none;
+        border-radius: 0;
+        height: 100vh;
+    }
+
+    &__close {
+        cursor: pointer;
+        margin: 2rem;
+        display: flex;
+        justify-content: flex-end;
+
+        &--img {
+            width: 4rem;
+            transition: all .3s;
+            border-radius: 50%;
+
+            transition: all .3s;
+
+            &:hover {
+                filter: hue-rotate(-15deg);
+            }
+        }
+    }
+
+    &__title {
+        margin: 5rem 0 0 5rem;
+        font-size: 2.5rem;
+    }
+
+    &__form {
+        padding: 5rem;
+
+        input[type=text], input[type=password] {
+            display: block;
+            width: 100%;
+            color: $color-primary;
+            font-size: 1.7rem;
+            padding: 1rem;
+            border: 1px solid $color-primary;
+            border-radius: 3px;
+            margin: 1.5rem 0;
+            background-color: $color-secondary;
+
+            transition: all .2s;
+
+            &::placeholder {
+                color: #37d7ff79;
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(81, 220, 255, 0.6);
+                filter: brightness(110%);
+            }
+        }
+
+        &--button {
+            width: 20rem;
+            // margin: 0 auto;
+            color: $color-primary;
+            padding: 1rem;
+            font-size: 1.5rem;
+            letter-spacing: .1rem;
+            text-transform: uppercase;
+            border: 1px solid $color-primary;
+            border-radius: 3px;
+            background-color: transparent;
+            margin-top: 2rem;
+
+            transition: all .3s;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $color-primary;
+                color: $color-secondary;
+            }
+        }
+
+        &--forgot {
+            position: relative;
+            left: 10rem;
+            color: $color-primary;
+            text-align: center;
+            font-size: 1.5rem;
+            text-decoration: none;
+
+            transition: all .3s;
+
+            @media only screen and (max-width: $bp-small-1) {
+                left: 3rem;
+            }
+
+            &:hover {
+                filter: brightness(110%);
+            }
+        }
+    }
+
+    &__signup {
+        margin-top: 10rem;
+        text-align: center;
+        font-size: 1.8rem;
+
+        &-link {
+            color: $color-primary;
+            font-weight: 600;
+            filter: hue-rotate(-10deg);
+
+            transition: all .3s;
+
+            &:hover {
+                filter: brightness(110%);
+            }
+        }
+    }
+}
