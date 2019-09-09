@@ -333,12 +333,14 @@ h1 {
   position: relative;
   top: 8rem;
   left: 7rem;
+  margin-top: -4rem;
 }
 @media only screen and (max-width: 67.9em) {
   .contact-title {
     text-align: center;
     position: unset;
     margin-bottom: 5rem;
+    margin-top: 0;
   }
 }
 
@@ -430,6 +432,7 @@ h1 {
   font-size: 1.8rem;
   font-family: "Nunito Sans", sans-serif;
   color: #37d7ff;
+  letter-spacing: 0.1rem;
   border-radius: 3px;
   border: 1px solid #1A2E4C;
   background: rgba(26, 46, 76, 0.404);
@@ -447,23 +450,21 @@ h1 {
   height: 15rem;
   resize: vertical;
 }
-.contact__form input[type=submit] {
+.contact__form--button {
   align-self: center;
   width: 20rem;
   margin-top: 2rem;
   padding: 1rem;
   font-size: 1.8rem;
   font-family: "Nunito Sans", sans-serif;
+  text-transform: uppercase;
   color: #1A2E4C;
   border-radius: 3px;
   border: 1px solid #37d7ff;
   background: #37d7ff;
   transition: all 0.3s;
 }
-.contact__form input[type=submit]::placeholder {
-  color: #37d7ff79;
-}
-.contact__form input[type=submit]:hover {
+.contact__form--button:hover {
   cursor: pointer;
   filter: brightness(110%);
 }

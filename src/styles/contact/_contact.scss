@@ -3,11 +3,13 @@
     position: relative;
     top: 8rem;
     left: 7rem;
+    margin-top: -4rem;
 
     @media only screen and (max-width: $bp-large-3) {
        text-align: center;
        position: unset;
        margin-bottom: 5rem;
+       margin-top: 0;
     }
 }
 
@@ -108,9 +110,9 @@
             font-size: 1.8rem;
             font-family: $font-family;
             color: $color-text-primary;
+            letter-spacing: .1rem;
             border-radius: 3px;
             border: 1px solid $color-secondary;
-            // background: linear-gradient(to right, #25496b, #1a344c);
             background: rgba(26, 46, 76, 0.404);
 
             transition: all .3s;
@@ -131,13 +133,15 @@
             resize: vertical;
         }
 
-        input[type=submit] {
+        &--button {
             align-self: center;
             width: 20rem;
             margin-top: 2rem;
             padding: 1rem;
             font-size: 1.8rem;
             font-family: $font-family;
+            text-transform: uppercase;
+            
             color: $color-text-secondary;
             border-radius: 3px;
             border: 1px solid $color-primary;
@@ -145,10 +149,6 @@
             background: $color-primary;
 
             transition: all .3s;
-
-            &::placeholder {
-                color: #37d7ff79;
-            }
 
             &:hover {
                 cursor: pointer;
