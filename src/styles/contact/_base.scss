@@ -77,6 +77,18 @@ body {
     ". contact contact ."
     "footer footer footer footer";
     }
+
+    @media only screen and (max-width: $bp-large-3) {
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+    }
+
+    @media only screen and (max-width: $bp-medium-2) {
+        grid-template-columns: 2fr 3fr 3fr 2fr;
+    }
+
+    @media only screen and (max-width: $bp-medium-5) {
+        grid-template-columns: .1fr 3fr 3fr .1fr;
+    }
 }
 
 h1 {

@@ -3,7 +3,7 @@
     position: relative;
     top: 8rem;
     left: 7rem;
-    margin-top: -4rem;
+    margin-top: -3rem;
 
     @media only screen and (max-width: $bp-large-3) {
        text-align: center;
@@ -68,23 +68,15 @@
 
 .contact-wrapper {
     grid-area: contact;
-
-    // display: flex;
-    justify-content: center;
-    align-items: center;
-    // flex-direction: column;
-    height: fit-content;
     margin-bottom: 6rem;
-
-    // background-color: rgba(0, 0, 0, 0.2);
 }
 
 .contact {
     background: linear-gradient(to right bottom, #25496bb6, #1a344cb6);
-    padding: 5rem;
-    border: 1px solid $color-secondary;
+    padding: 4rem;
     border-radius: 3px;
     height: fit-content;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, .3);
 
     @media only screen and (max-width: $bp-medium-5) {
         padding: 5rem 2rem;
@@ -129,7 +121,7 @@
         }
 
         textarea {
-            height: 15rem;
+            height: 17rem;
             resize: vertical;
         }
 

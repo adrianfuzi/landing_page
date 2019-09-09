@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/main.scss":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/index/main.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"javascript/navbar.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"javascript/index/navbar.js":[function(require,module,exports) {
 window.onscroll = function () {
   scrollFunction();
 };
@@ -203,7 +203,7 @@ function scrollFunction() {
     document.querySelector(stickyHeader).style.top = '-8rem';
   }
 }
-},{}],"javascript/hamburger.js":[function(require,module,exports) {
+},{}],"javascript/index/hamburger.js":[function(require,module,exports) {
 var hamburgerIcon = document.querySelector('.hamburger');
 var hamburgerMenu = document.querySelector('.hamburger-menu');
 var navItem = document.querySelectorAll('.hamburger-menu--nav-item');
@@ -226,7 +226,7 @@ navItem.forEach(function (el) {
     closeMenu();
   });
 });
-},{}],"javascript/smoothScroll.js":[function(require,module,exports) {
+},{}],"javascript/index/smoothScroll.js":[function(require,module,exports) {
 //Jump to top when the logo is clicked
 $('#home').click(function (event) {
   event.preventDefault();
@@ -276,7 +276,7 @@ $('.burger-c').click(function () {
     scrollTop: $("#nav-company").offset().top - 15
   }, 400);
 });
-},{}],"javascript/animations.js":[function(require,module,exports) {
+},{}],"javascript/index/animations.js":[function(require,module,exports) {
 if ($(window).width() >= 1207) {
   TweenMax.from('.hero__box', 1, {
     x: -200,
@@ -502,7 +502,7 @@ if ($(window).width() >= 1207) {
     ease: Power1.easeOut
   }).delay(.5);
 }
-},{}],"javascript/login.js":[function(require,module,exports) {
+},{}],"javascript/index/login.js":[function(require,module,exports) {
 var loginBtn = document.querySelectorAll('.header__nav--item-btn');
 var loginBurger = document.querySelector('.hamburger__menu--nav-button');
 var loginClose = document.querySelector('.login__close--img');
@@ -542,10 +542,10 @@ loginBtn.forEach(function (el) {
 });
 loginBurger.addEventListener('click', openLogin);
 loginClose.addEventListener('click', closeLogin);
-},{}],"javascript/index.js":[function(require,module,exports) {
+},{}],"javascript/index/index.js":[function(require,module,exports) {
 "use strict";
 
-require("../styles/main.scss");
+require("../../styles/index/main.scss");
 
 var _navbar = require("./navbar");
 
@@ -556,7 +556,7 @@ var _smoothScroll = require("./smoothScroll");
 var _animations = require("./animations");
 
 var _login = require("./login");
-},{"../styles/main.scss":"styles/main.scss","./navbar":"javascript/navbar.js","./hamburger":"javascript/hamburger.js","./smoothScroll":"javascript/smoothScroll.js","./animations":"javascript/animations.js","./login":"javascript/login.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../../styles/index/main.scss":"styles/index/main.scss","./navbar":"javascript/index/navbar.js","./hamburger":"javascript/index/hamburger.js","./smoothScroll":"javascript/index/smoothScroll.js","./animations":"javascript/index/animations.js","./login":"javascript/index/login.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -584,7 +584,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49173" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65437" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -759,5 +759,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","javascript/index.js"], null)
-//# sourceMappingURL=/javascript.a9e043f0.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","javascript/index/index.js"], null)
+//# sourceMappingURL=/index.8e26a46c.js.map

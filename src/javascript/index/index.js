@@ -1,4 +1,4 @@
-import '../styles/main.scss';
+import '../../styles/index/main.scss';
 import { navbar } from './navbar';
 import { hamburger } from './hamburger';
 import { smoothScroll } from './smoothScroll';
