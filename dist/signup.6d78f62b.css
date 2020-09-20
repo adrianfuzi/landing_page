@@ -113,7 +113,7 @@ h1 {
   border: 1px solid #37d7ff;
   border-radius: 3px;
   margin: 1.5rem 0;
-  background-color: #1A2E4C;
+  background-color: #1a2e4c;
   transition: all 0.2s;
 }
 .signup__form input[type=text]::placeholder, .signup__form input[type=email]::placeholder, .signup__form input[type=password]::placeholder {
@@ -130,7 +130,7 @@ h1 {
 }
 .signup__form--button {
   width: 100%;
-  color: #1A2E4C;
+  color: #1a2e4c;
   padding: 1rem;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
@@ -281,7 +281,7 @@ h1 {
   border: 1px solid #37d7ff;
   border-radius: 3px;
   margin: 1.5rem 0;
-  background-color: #1A2E4C;
+  background-color: #1a2e4c;
   transition: all 0.2s;
 }
 .login__form input[type=text]::placeholder, .login__form input[type=password]::placeholder {
@@ -308,7 +308,7 @@ h1 {
 .login__form--button:hover {
   cursor: pointer;
   background-color: #37d7ff;
-  color: #1A2E4C;
+  color: #1a2e4c;
 }
 .login__form--forgot {
   position: relative;

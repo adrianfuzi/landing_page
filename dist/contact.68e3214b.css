@@ -8,6 +8,11 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (min-width: 113.4em) {
+  html {
+    font-size: 82.5%;
+  }
+}
 @media only screen and (max-width: 83.5em) {
   html {
     font-size: 56.2%;
@@ -26,22 +31,12 @@ body {
   color: #37d7ff;
   background-image: linear-gradient(135deg, rgba(76, 76, 76, 0.04) 0%, rgba(76, 76, 76, 0.04) 10%, rgba(149, 149, 149, 0.04) 10%, rgba(149, 149, 149, 0.04) 100%), linear-gradient(90deg, rgba(196, 196, 196, 0.04) 0%, rgba(196, 196, 196, 0.04) 59%, rgba(68, 68, 68, 0.04) 59%, rgba(68, 68, 68, 0.04) 100%), linear-gradient(45deg, rgba(39, 39, 39, 0.01) 0%, rgba(39, 39, 39, 0.01) 9%, rgba(218, 218, 218, 0.01) 9%, rgba(218, 218, 218, 0.01) 100%), linear-gradient(0deg, rgba(26, 26, 26, 0.04) 0%, rgba(26, 26, 26, 0.04) 33%, rgba(90, 90, 90, 0.04) 33%, rgba(90, 90, 90, 0.04) 100%), linear-gradient(135deg, rgba(37, 37, 37, 0.07) 0%, rgba(37, 37, 37, 0.07) 46%, rgba(50, 50, 50, 0.07) 46%, rgba(50, 50, 50, 0.07) 100%), linear-gradient(90deg, #081c41, #10ade2);
   background-size: cover;
-  background-repeat: no-repeat;
-  height: fit-content;
+  background-repeat: repeat;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 3fr 3fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: "header header header header" ". title title ." "img img contact ." "footer footer footer footer";
-}
-@media only screen and (min-width: 103.1em) {
-  body {
-    padding: 0 5rem 0 5rem;
-  }
-}
-@media only screen and (min-width: 113.4em) {
-  body {
-    padding: 0 10rem 0 10rem;
-  }
 }
 @media only screen and (max-width: 67.9em) {
   body {
@@ -282,7 +277,7 @@ h1 {
   border: 1px solid #37d7ff;
   border-radius: 3px;
   margin: 1.5rem 0;
-  background-color: #1A2E4C;
+  background-color: #1a2e4c;
   transition: all 0.2s;
 }
 .login__form input[type=text]::placeholder, .login__form input[type=password]::placeholder {
@@ -309,7 +304,7 @@ h1 {
 .login__form--button:hover {
   cursor: pointer;
   background-color: #37d7ff;
-  color: #1A2E4C;
+  color: #1a2e4c;
 }
 .login__form--forgot {
   position: relative;
@@ -438,7 +433,9 @@ h1 {
   top: 1rem;
   font-size: 1.8rem;
 }
-.contact__form input[type=text], .contact__form input[type=email], .contact__form textarea {
+.contact__form input[type=text],
+.contact__form input[type=email],
+.contact__form textarea {
   margin-top: 2rem;
   padding: 1rem;
   font-size: 1.8rem;
@@ -446,14 +443,18 @@ h1 {
   color: #37d7ff;
   letter-spacing: 0.1rem;
   border-radius: 3px;
-  border: 1px solid #1A2E4C;
+  border: 1px solid #1a2e4c;
   background: rgba(26, 46, 76, 0.404);
   transition: all 0.3s;
 }
-.contact__form input[type=text]::placeholder, .contact__form input[type=email]::placeholder, .contact__form textarea::placeholder {
+.contact__form input[type=text]::placeholder,
+.contact__form input[type=email]::placeholder,
+.contact__form textarea::placeholder {
   color: #37d7ff79;
 }
-.contact__form input[type=text]:focus, .contact__form input[type=email]:focus, .contact__form textarea:focus {
+.contact__form input[type=text]:focus,
+.contact__form input[type=email]:focus,
+.contact__form textarea:focus {
   outline: none;
   border-color: #37d7ff;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(81, 220, 255, 0.6);
@@ -470,7 +471,7 @@ h1 {
   font-size: 1.8rem;
   font-family: "Nunito Sans", sans-serif;
   text-transform: uppercase;
-  color: #1A2E4C;
+  color: #1a2e4c;
   border-radius: 3px;
   border: 1px solid #37d7ff;
   background: #37d7ff;
@@ -569,7 +570,7 @@ h1 {
 }
 .header__nav--item-btn:hover {
   cursor: pointer;
-  color: #1A2E4C;
+  color: #1a2e4c;
   background-color: #37d7ff;
 }
 
@@ -590,7 +591,7 @@ h1 {
 }
 .hamburger__menu--nav-button:hover {
   cursor: pointer;
-  color: #1A2E4C;
+  color: #1a2e4c;
   background-color: #37d7ff;
   filter: brightness(100%);
 }

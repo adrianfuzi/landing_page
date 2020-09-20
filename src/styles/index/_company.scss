@@ -1,80 +1,81 @@
 .company {
-    grid-area: company;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "compimg compimg comptext comptext";
+  grid-area: company;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "compimg compimg comptext comptext";
 
-    height: calc(100vh - 7.5rem);
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 0 20rem 0 20rem;
-    
-    @media only screen and (max-width: $bp-large-1) {
-        padding: 0 15rem 0 15rem;
+  height: calc(100vh - 7.5rem);
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0 20rem 0 20rem;
+
+  @media only screen and (min-width: $bp-huge-3) {
+    padding: 0 30rem 0 30rem;
+  }
+
+  @media only screen and (max-width: $bp-large-1) {
+    padding: 0 15rem 0 15rem;
+  }
+
+  @media only screen and (max-width: $bp-large-2) {
+    height: 75rem;
+    padding: 0 5rem 0 5rem;
+  }
+
+  @media only screen and (max-width: $bp-medium-3) {
+    height: auto;
+    grid-template-areas:
+      "comptext comptext comptext comptext"
+      "compimg compimg compimg compimg";
+  }
+
+  @media only screen and (max-width: $bp-medium-5) {
+    padding: 0 3rem 0 3rem;
+  }
+
+  &__box {
+    grid-area: comptext;
+    margin: 6rem 3rem 0 0;
+    color: $color-text-primary;
+    // border: 2px solid $color-secondary;
+    // background-color: $color-primary;
+    border-radius: 3px;
+    max-width: 95%;
+
+    @media only screen and (max-width: $bp-medium-3) {
+      margin: 2rem 3rem 0 0;
     }
 
+    &--title {
+      margin-bottom: 2rem;
+
+      @media only screen and (max-width: $bp-medium-3) {
+        text-align: center;
+      }
+    }
+
+    &--text {
+      font-size: 2rem;
+    }
+  }
+
+  &__img {
+    position: relative;
+    bottom: 2rem;
+    grid-area: compimg;
+    justify-self: stretch;
+    align-self: center;
+    width: 45rem;
+
     @media only screen and (max-width: $bp-large-2) {
-        height: 75rem;
-        padding: 0 5rem 0 5rem;
+      width: 40rem;
     }
 
     @media only screen and (max-width: $bp-medium-3) {
-        height: auto;
-        grid-template-areas:
-        "comptext comptext comptext comptext"
-        "compimg compimg compimg compimg";
+      margin-top: 2rem;
+      padding: 3rem;
+      width: 30rem;
+      justify-self: center;
     }
-
-    @media only screen and (max-width: $bp-medium-5) {
-        padding: 0 3rem 0 3rem;
-    }
-
-    &__box {
-        grid-area: comptext;
-        margin: 6rem 3rem 0 0;
-        color: $color-text-primary;
-        // border: 2px solid $color-secondary;
-        // background-color: $color-primary;
-        border-radius: 3px;
-        max-width: 95%;
-
-        @media only screen and (max-width: $bp-medium-3) {
-            margin: 2rem 3rem 0 0;
-        }
-
-        &--title {
-
-            margin-bottom: 2rem;
-
-            @media only screen and (max-width: $bp-medium-3) {
-                text-align: center;
-            }
-
-        }
-
-        &--text {
-            font-size: 2rem;
-        }
-    }
-
-    &__img {
-        position: relative;
-        bottom: 2rem;
-        grid-area: compimg;
-        justify-self: stretch;
-        align-self: center;
-        width: 45rem;
-
-        @media only screen and (max-width: $bp-large-2) {
-            width: 40rem;
-        }
-
-        @media only screen and (max-width: $bp-medium-3) {
-            margin-top: 2rem;
-            padding: 3rem;
-            width: 30rem;
-            justify-self: center;
-        }
-    }
+  }
 }

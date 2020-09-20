@@ -8,6 +8,11 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (min-width: 113.4em) {
+  html {
+    font-size: 82.5%;
+  }
+}
 @media only screen and (max-width: 83.5em) {
   html {
     font-size: 56.2%;
@@ -40,16 +45,6 @@ body {
 @media only screen and (max-width: 50.6em) {
   body {
     grid-template-areas: "header header header header" "info info info info" "hero hero hero hero" "features features features features" "pricing pricing pricing pricing" "company company company company" "feedback feedback feedback feedback" "footer footer footer footer";
-  }
-}
-@media only screen and (min-width: 103.1em) {
-  body {
-    padding: 0 5rem 0 5rem;
-  }
-}
-@media only screen and (min-width: 113.4em) {
-  body {
-    padding: 0 10rem 0 10rem;
   }
 }
 
@@ -142,16 +137,6 @@ h1 {
   background: linear-gradient(to left, #25496b, #1a344c);
   transition: top 0.7s;
   z-index: 100;
-}
-@media only screen and (min-width: 103.1em) {
-  .header__sticky {
-    width: calc(100% - 10rem);
-  }
-}
-@media only screen and (min-width: 113.4em) {
-  .header__sticky {
-    width: calc(100% - 20rem);
-  }
 }
 @media only screen and (max-width: 50.6em) {
   .header__sticky {
@@ -315,6 +300,11 @@ h1 {
   padding: 2rem 20rem 5rem 20rem;
   height: calc(100vh - 7.5rem);
 }
+@media only screen and (min-width: 113.4em) {
+  .features {
+    padding: 2rem 40rem 5rem 40rem;
+  }
+}
 @media only screen and (max-width: 75.4em) {
   .features {
     height: 85rem;
@@ -411,6 +401,11 @@ h1 {
   height: calc(100vh - 7.5rem);
   background-color: rgba(0, 0, 0, 0.2);
   padding: 0 20rem 0 20rem;
+}
+@media only screen and (min-width: 113.4em) {
+  .company {
+    padding: 0 30rem 0 30rem;
+  }
 }
 @media only screen and (max-width: 83.5em) {
   .company {
@@ -509,6 +504,11 @@ h1 {
   display: flex;
   justify-content: space-around;
   margin: 0 10rem 0 10rem;
+}
+@media only screen and (min-width: 113.4em) {
+  .pricing__box {
+    padding: 0rem 20rem 0rem 20rem;
+  }
 }
 @media only screen and (max-width: 83.5em) {
   .pricing__box {
@@ -811,7 +811,7 @@ h1 {
   border: 1px solid #37d7ff;
   border-radius: 3px;
   margin: 1.5rem 0;
-  background-color: #1A2E4C;
+  background-color: #1a2e4c;
   transition: all 0.2s;
 }
 .login__form input[type=text]::placeholder, .login__form input[type=password]::placeholder {
@@ -838,7 +838,7 @@ h1 {
 .login__form--button:hover {
   cursor: pointer;
   background-color: #37d7ff;
-  color: #1A2E4C;
+  color: #1a2e4c;
 }
 .login__form--forgot {
   position: relative;
@@ -890,7 +890,7 @@ h1 {
 }
 .header__nav--item-btn:hover {
   cursor: pointer;
-  color: #1A2E4C;
+  color: #1a2e4c;
   background-color: #37d7ff;
 }
 
@@ -902,7 +902,7 @@ h1 {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
-  color: #1A2E4C;
+  color: #1a2e4c;
   text-transform: uppercase;
   background-color: #37d7ff;
   border: none;
@@ -927,7 +927,7 @@ h1 {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1A2E4C;
+  color: #1a2e4c;
   text-transform: uppercase;
   background-color: #37d7ff;
   border: 1px solid #37d7ff;
@@ -958,7 +958,7 @@ h1 {
 }
 .hamburger__menu--nav-button:hover {
   cursor: pointer;
-  color: #1A2E4C;
+  color: #1a2e4c;
   background-color: #37d7ff;
   filter: brightness(100%);
 }

@@ -1,156 +1,158 @@
 .contact-title {
-    grid-area: title;
-    position: relative;
-    top: 8rem;
-    left: 7rem;
-    margin-top: -3rem;
+  grid-area: title;
+  position: relative;
+  top: 8rem;
+  left: 7rem;
+  margin-top: -3rem;
 
-    @media only screen and (max-width: $bp-large-3) {
-       text-align: center;
-       position: unset;
-       margin-bottom: 5rem;
-       margin-top: 0;
-    }
+  @media only screen and (max-width: $bp-large-3) {
+    text-align: center;
+    position: unset;
+    margin-bottom: 5rem;
+    margin-top: 0;
+  }
 }
 
 .img__box {
-    grid-area: img;
-    position: relative;
-    top: 13rem;
-    margin: 0rem 5rem;
+  grid-area: img;
+  position: relative;
+  top: 13rem;
+  margin: 0rem 5rem;
 
-    justify-self: center;
+  justify-self: center;
 
-    
-    @media only screen and (max-width: $bp-large-3) {
-        position: unset;
-        margin-bottom: 5rem;
+  @media only screen and (max-width: $bp-large-3) {
+    position: unset;
+    margin-bottom: 5rem;
+  }
+
+  &--title {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 10rem;
+
+    @media only screen and (max-width: $bp-small-1) {
+      margin: 0 0 1rem 5rem;
     }
+  }
 
-    &--title {
-        font-size: 2.5rem;
-        margin: 0 0 1rem 10rem;
+  &--icon {
+    height: 0rem;
 
-        @media only screen and (max-width: $bp-small-1) {
-            margin: 0 0 1rem 5rem;
-        }
+    img {
+      position: relative;
+      right: 5rem;
+      bottom: 0.5rem;
+      height: 5rem;
     }
+  }
 
-    &--icon {
-        height: 0rem;
+  &--text {
+    font-size: 1.5rem;
+    margin: 0 0 1rem 10rem;
 
-        img {
-            position: relative;
-            right: 5rem;
-            bottom: .5rem;
-            height: 5rem;
-        }
+    @media only screen and (max-width: $bp-small-1) {
+      margin: 0 0 1rem 5rem;
     }
+  }
 
-    &--text {
-        font-size: 1.5rem;
-        margin: 0 0 1rem 10rem;
+  &--img {
+    height: 25rem;
+    opacity: 0.8;
 
-        @media only screen and (max-width: $bp-small-1) {
-            margin: 0 0 1rem 5rem;
-        }
+    @media only screen and (max-width: $bp-small-1) {
+      height: 18rem;
     }
-
-    &--img {
-        height: 25rem;
-        opacity: .8;
-
-        @media only screen and (max-width: $bp-small-1) {
-            height: 18rem;
-        }
-    }
+  }
 }
 
 .contact-wrapper {
-    grid-area: contact;
-    margin-bottom: 6rem;
+  grid-area: contact;
+  margin-bottom: 6rem;
 }
 
 .contact {
-    background: linear-gradient(to right bottom, #25496bb6, #1a344cb6);
-    padding: 4rem;
-    border-radius: 3px;
-    height: fit-content;
-    box-shadow: 0px 20px 20px rgba(0, 0, 0, .3);
+  background: linear-gradient(to right bottom, #25496bb6, #1a344cb6);
+  padding: 4rem;
+  border-radius: 3px;
+  height: fit-content;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.3);
 
-    @media only screen and (max-width: $bp-medium-5) {
-        padding: 5rem 2rem;
+  @media only screen and (max-width: $bp-medium-5) {
+    padding: 5rem 2rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    &--name {
+      width: 48%;
     }
 
-    &__form {
-        display: flex;
-        flex-direction: column;
-
-        &--name {
-            width: 48%;
-        }
-
-        label {
-            position: relative;
-            top: 1rem;
-            font-size: 1.8rem;
-        }
-
-        input[type=text], input[type=email], textarea {
-            margin-top: 2rem;
-            padding: 1rem;
-            font-size: 1.8rem;
-            font-family: $font-family;
-            color: $color-text-primary;
-            letter-spacing: .1rem;
-            border-radius: 3px;
-            border: 1px solid $color-secondary;
-            background: rgba(26, 46, 76, 0.404);
-
-            transition: all .3s;
-
-            &::placeholder {
-                color: #37d7ff79;
-            }
-
-            &:focus {
-                outline: none;
-                border-color: $color-primary;
-                box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(81, 220, 255, 0.6);
-            }
-        }
-
-        textarea {
-            height: 17rem;
-            resize: vertical;
-        }
-
-        &--button {
-            align-self: center;
-            width: 20rem;
-            margin-top: 2rem;
-            padding: 1rem;
-            font-size: 1.8rem;
-            font-family: $font-family;
-            text-transform: uppercase;
-            
-            color: $color-text-secondary;
-            border-radius: 3px;
-            border: 1px solid $color-primary;
-            // background: linear-gradient(to right, #25496b, #1a344c);
-            background: $color-primary;
-
-            transition: all .3s;
-
-            &:hover {
-                cursor: pointer;
-                filter: brightness(110%);
-            }
-        }
-
-        &--row {
-            display: flex;
-            justify-content: space-between;
-        }
+    label {
+      position: relative;
+      top: 1rem;
+      font-size: 1.8rem;
     }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      margin-top: 2rem;
+      padding: 1rem;
+      font-size: 1.8rem;
+      font-family: $font-family;
+      color: $color-text-primary;
+      letter-spacing: 0.1rem;
+      border-radius: 3px;
+      border: 1px solid $color-secondary;
+      background: rgba(26, 46, 76, 0.404);
+
+      transition: all 0.3s;
+
+      &::placeholder {
+        color: #37d7ff79;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: $color-primary;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+          0 0 8px rgb(81, 220, 255, 0.6);
+      }
+    }
+
+    textarea {
+      height: 17rem;
+      resize: vertical;
+    }
+
+    &--button {
+      align-self: center;
+      width: 20rem;
+      margin-top: 2rem;
+      padding: 1rem;
+      font-size: 1.8rem;
+      font-family: $font-family;
+      text-transform: uppercase;
+
+      color: $color-text-secondary;
+      border-radius: 3px;
+      border: 1px solid $color-primary;
+      // background: linear-gradient(to right, #25496b, #1a344c);
+      background: $color-primary;
+
+      transition: all 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        filter: brightness(110%);
+      }
+    }
+
+    &--row {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
